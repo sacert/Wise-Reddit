@@ -24,7 +24,7 @@ var app = {
   startApp: function() {
    //Get Feed
     console.log('Fetching feed...');
-     fetch('http://www.reddit.com/r/TrueReddit/comments/2yole7/america_dumbs_down_us_overrun_by_wave_of/.json')
+     fetch('https://www.reddit.com/r/TrueReddit/comments/2yole7/america_dumbs_down_us_overrun_by_wave_of/.json')
       .then(app.status)
       .then(app.json)
       .then(app.getCommentsFromJSON)
