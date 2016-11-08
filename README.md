@@ -1,6 +1,6 @@
 # Wise Reddit
 
-##### Try it out at: https://sacert.github.io/wise-reddit/
+##### Try it out at: https://sacert.github.io/Wise-Reddit/
 
 Created a website to listen to the great and wise Reddit. So much knowledge hidden behind that weird Reddit creature known as Snoo, may be bless up with his infinite knowledge.
 
