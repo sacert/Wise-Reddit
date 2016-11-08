@@ -1,11 +1,13 @@
+// the function to end all functions
+// the function to be all functions
 function app() {
     console.log('Running...');
     getComment();
     document.getElementById("next").addEventListener("click", getComment, false);
     setUpLoadingAnim();
-
 }
 
+// simple loading animation
 function setUpLoadingAnim() {
   i = 0;
   setInterval(function() {
@@ -14,6 +16,8 @@ function setUpLoadingAnim() {
   }, 800);
 }
 
+// get the mysterious and wise commet oh so graciously provided to us by the
+// wise Reddit senpai
 function getComment() {
   document.getElementById("loading").style.visibility = "visible";
   console.log('Fetching feed...');
@@ -39,6 +43,8 @@ function json(response) {
   return response.json()
 }
 
+// Make sure the comment isn't too long or isn't within an 18+ subreddit
+// Not that the beautiful Reddit guru doesn't already know this
 function getCommentsFromJSON(json) {
   console.log('Finding comments...');
   var text;
@@ -79,4 +85,6 @@ function checkOverflow(el)
   return isOverflowing;
 }
 
+// so simple, so fragile
+// be free little function 
 app();
